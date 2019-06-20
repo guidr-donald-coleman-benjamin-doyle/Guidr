@@ -1,0 +1,15 @@
+nav {
+  margin: 30px 0;
+}
+nav a {
+  text-decoration: none;
+  color: #6668d0;
+  font-size: 20px;
+}
+nav .nav-left {
+  padding-left: 50px;
+}
+nav .nav-right {
+  float: right;
+  padding-right: 40px;
+}
