@@ -25,8 +25,31 @@ nav .nav-right {
   padding-right: 40px;
 }
 footer {
-  background-color: #6668d0;
+  background-color: #5433ff;
   padding: 30px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer .footer-left {
+  padding-left: 50px;
+}
+footer .footer-right {
+  float: right;
+  padding-right: 40px;
+}
+footer .footer-mid {
+  padding-left: 20px;
+  padding-top: 30px;
+}
+footer .footer-mid a {
+  padding-left: 30px;
+}
+footer p {
+  padding-left: 50px;
+  padding-top: 20px;
+  color: white;
 }
 .top-content {
   padding-left: 100px;
