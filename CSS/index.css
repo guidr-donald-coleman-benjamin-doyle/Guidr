@@ -127,8 +127,7 @@ table {
   border-spacing: 0;
 }
 html {
-  font-size: 62.5%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #F8F9FA;
 }
 * {
@@ -201,7 +200,7 @@ nav {
 }
 nav a {
   text-decoration: none;
-  color: #2f3e9e;
+  color: white;
   font-size: 20px;
 }
 nav .nav-left {
@@ -235,6 +234,9 @@ nav .nav-right {
   font-size: 20px;
   border-radius: 10px;
 }
+.sign-up .signup-form .btn a {
+  text-decoration: none;
+}
 footer {
   background-color: #5433ff;
   padding: 30px;
@@ -266,7 +268,9 @@ footer p {
   background: linear-gradient(to right, #6fb1fc, #4364f7, #0052d4);
 }
 .top-content {
-  padding-left: 100px;
+  padding-left: 290px;
+  padding-bottom: 50px;
+  padding-top: 30px;
 }
 .top-content h1 {
   font-size: 40px;
