@@ -200,7 +200,7 @@ nav {
 }
 nav a {
   text-decoration: none;
-  color: #2f3e9e;
+  color: white;
   font-size: 20px;
 }
 nav .nav-left {
@@ -234,6 +234,9 @@ nav .nav-right {
   font-size: 20px;
   border-radius: 10px;
 }
+.sign-up .signup-form .btn a {
+  text-decoration: none;
+}
 footer {
   background-color: #5433ff;
   padding: 30px;
@@ -261,9 +264,13 @@ footer p {
   padding-top: 20px;
   color: white;
 }
-.top-content {
-  padding-left: 100px;
+.index-header {
   background: linear-gradient(to right, #6fb1fc, #4364f7, #0052d4);
+}
+.top-content {
+  padding-left: 290px;
+  padding-bottom: 50px;
+  padding-top: 30px;
 }
 .top-content h1 {
   font-size: 40px;
@@ -330,7 +337,7 @@ footer p {
   font-size: 20px;
   border-radius: 10px;
 }
-.container {
+.home-container {
   margin-top: 140px;
   margin-bottom: 60px;
   background-color: white;
