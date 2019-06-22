@@ -1,8 +1,17 @@
 .home-container {
-    margin-top: 140px;
-    margin-bottom: 60px;
+    position: relative;
+    top: 140px;
+    bottom: auto;
+    z-index: 1;
     background-color: white;
     border-radius: 5px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 35px;
+    p {
+        margin: 0 auto;
+    }
 }
 .intro {
     display: flex;
@@ -24,6 +33,9 @@
     .text-content {
         width: calc(100% - 250px);
     }
+}
+.intro-description {
+    width: 85%;
 }
 .trips {
     display: flex;
