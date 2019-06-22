@@ -24,6 +24,30 @@ nav .nav-right {
   float: right;
   padding-right: 40px;
 }
+.sign-up {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sign-up img {
+  width: 50%;
+  height: 50%;
+}
+.sign-up .signup-form {
+  padding-left: 30px;
+}
+.sign-up .signup-form input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: black;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+.sign-up .signup-form .btn {
+  padding: 5px 20px;
+  color: #6668d0;
+  font-size: 20px;
+  border-radius: 10px;
+}
 footer {
   background-color: #5433ff;
   padding: 30px;
