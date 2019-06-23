@@ -136,6 +136,17 @@ html {
 body {
   margin: 0;
 }
+.container-index {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container-index {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .container {
   max-width: 1200px;
   width: 100%;
@@ -203,6 +214,12 @@ nav a {
   color: white;
   font-size: 20px;
 }
+@media (max-width: 500px) {
+  nav a {
+    font-size: 12px;
+    color: white;
+  }
+}
 nav .nav-left {
   padding-left: 50px;
 }
@@ -214,12 +231,32 @@ nav .nav-right {
   display: flex;
   flex-wrap: wrap;
 }
-.sign-up img {
-  width: 50%;
-  height: 50%;
+.sign-up .image-flow img {
+  width: 80%;
+  height: auto;
+  position: relative;
+}
+.sign-up .image-flow h1 {
+  position: absolute;
+  top: 300px;
+  left: 100px;
+  width: 100%;
+  color: white;
+}
+.sign-up .image-flow p {
+  position: absolute;
+  top: 350px;
+  left: 100px;
+  width: 300px;
+  color: white;
 }
 .sign-up .signup-form {
   padding-left: 30px;
+  padding-top: 200px;
+}
+.sign-up .signup-form h1 {
+  text-align: center;
+  font-weight: 300;
 }
 .sign-up .signup-form input {
   outline: 0;
@@ -236,6 +273,19 @@ nav .nav-right {
 }
 .sign-up .signup-form .btn a {
   text-decoration: none;
+  color: #6668d0;
+}
+.sign-up .signup-form p {
+  text-align: center;
+}
+.sign-up .signup-form p a {
+  color: #6668d0;
+}
+.sign-up .signup-form .icons {
+  padding-left: 30px;
+}
+.sign-up .signup-form .icons .fab {
+  padding-left: 40px;
 }
 footer {
   background-color: #5433ff;
@@ -272,14 +322,33 @@ footer p {
   padding-bottom: 50px;
   padding-top: 30px;
 }
+@media (max-width: 500px) {
+  .top-content {
+    padding-left: 100px;
+  }
+  .top-content hr {
+    width: 500px;
+  }
+}
 .top-content h1 {
   font-size: 40px;
   font-weight: 400;
   color: white;
 }
+@media (max-width: 500px) {
+  .top-content h1 {
+    font-size: 20px;
+  }
+}
 .top-content p {
   width: 500px;
   color: white;
+}
+@media (max-width: 500px) {
+  .top-content p {
+    font-size: 15px;
+    width: 340px;
+  }
 }
 .top-content .btn {
   padding: 5px 20px;
@@ -287,18 +356,42 @@ footer p {
   font-size: 20px;
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .top-content .btn {
+    padding: 5px 10px;
+    color: #6668d0;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+}
 .top-content .btn a {
   text-decoration: none;
   color: #6668d0;
 }
+.top-content .btn:hover {
+  background-color: #00186f;
+}
 .middle-cta {
   padding-top: 50px;
+}
+@media (max-width: 500px) {
+  .middle-cta {
+    vertical-align: middle;
+  }
+  .middle-cta hr {
+    width: 500px;
+  }
 }
 .middle-cta img {
   width: 50%;
   height: auto;
   padding-left: 270px;
   border-radius: 40%;
+}
+@media (max-width: 500px) {
+  .middle-cta img {
+    padding-left: 100px;
+  }
 }
 .middle-cta .text {
   width: 375px;
@@ -311,6 +404,11 @@ footer p {
 .middle-cta .text p {
   color: #546e7a;
 }
+@media (max-width: 500px) {
+  .middle-cta .text {
+    padding-left: 100px;
+  }
+}
 .bottom .content-row {
   display: flex;
   flex-wrap: wrap;
@@ -319,9 +417,20 @@ footer p {
 .bottom .content-row .bottom-text {
   padding-left: 50px;
 }
+@media (max-width: 500px) {
+  .bottom .content-row .bottom-text {
+    padding-left: 30px;
+  }
+}
 .bottom .content-row img {
   max-width: 600px;
   height: 500px;
+}
+@media (max-width: 500px) {
+  .bottom .content-row img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 .bottom .content-row h3 {
   font-weight: 300;
@@ -336,6 +445,9 @@ footer p {
   color: #6668d0;
   font-size: 20px;
   border-radius: 10px;
+}
+.bottom .content-row .btn:hover {
+  background-color: #00186f;
 }
 .home-container {
   margin-top: 140px;
