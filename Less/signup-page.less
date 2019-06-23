@@ -1,16 +1,39 @@
 .sign-up {
   display: flex;
   flex-wrap: wrap;
-  // background: url(../img/signup-img.png);
 
-  img {
-    // float: left;
-    width: 50%;
-    height: 50%;
+  .image-flow {
+    img {
+      width: 80%;
+      height: auto;
+      position: relative;
+    }
+
+    h1 {
+      position: absolute;
+      top: 300px;
+      left: 100px;
+      width: 100%;
+      color: white;
+    }
+
+    p {
+      position: absolute;
+      top: 350px;
+      left: 100px;
+      width: 300px;
+      color: white;
+    }
   }
 
   .signup-form {
     padding-left: 30px;
+    padding-top: 200px;
+
+    h1 {
+      text-align: center;
+      font-weight: 300;
+    }
 
     input {
       outline: 0;
@@ -24,6 +47,22 @@
       .button(5px 20px);
       a {
         text-decoration: none;
+        color: @light-main;
+      }
+    }
+
+    p {
+      text-align: center;
+
+      a {
+        color: @light-main;
+      }
+    }
+
+    .icons {
+      padding-left: 30px;
+      .fab {
+        padding-left: 40px;
       }
     }
   }

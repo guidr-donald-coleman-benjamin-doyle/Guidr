@@ -231,12 +231,32 @@ nav .nav-right {
   display: flex;
   flex-wrap: wrap;
 }
-.sign-up img {
-  width: 50%;
-  height: 50%;
+.sign-up .image-flow img {
+  width: 80%;
+  height: auto;
+  position: relative;
+}
+.sign-up .image-flow h1 {
+  position: absolute;
+  top: 300px;
+  left: 100px;
+  width: 100%;
+  color: white;
+}
+.sign-up .image-flow p {
+  position: absolute;
+  top: 350px;
+  left: 100px;
+  width: 300px;
+  color: white;
 }
 .sign-up .signup-form {
   padding-left: 30px;
+  padding-top: 200px;
+}
+.sign-up .signup-form h1 {
+  text-align: center;
+  font-weight: 300;
 }
 .sign-up .signup-form input {
   outline: 0;
@@ -253,6 +273,19 @@ nav .nav-right {
 }
 .sign-up .signup-form .btn a {
   text-decoration: none;
+  color: #6668d0;
+}
+.sign-up .signup-form p {
+  text-align: center;
+}
+.sign-up .signup-form p a {
+  color: #6668d0;
+}
+.sign-up .signup-form .icons {
+  padding-left: 30px;
+}
+.sign-up .signup-form .icons .fab {
+  padding-left: 40px;
 }
 footer {
   background-color: #5433ff;
