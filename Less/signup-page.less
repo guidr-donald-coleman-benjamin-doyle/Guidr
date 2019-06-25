@@ -7,6 +7,10 @@
       width: 80%;
       height: auto;
       position: relative;
+
+      @media (max-width: 500px) {
+        display: none;
+      }
     }
 
     h1 {
@@ -15,6 +19,10 @@
       left: 100px;
       width: 100%;
       color: white;
+
+      @media (max-width: 500px) {
+        display: none;
+      }
     }
 
     p {
@@ -23,6 +31,10 @@
       left: 100px;
       width: 300px;
       color: white;
+
+      @media (max-width: 500px) {
+        display: none;
+      }
     }
   }
 
@@ -30,24 +42,42 @@
     padding-left: 30px;
     padding-top: 200px;
 
+    @media (max-width: 500px) {
+      padding-top: 0;
+      padding-left: 100px;
+    }
+
     h1 {
       text-align: center;
       font-weight: 300;
+      padding-bottom: 30px;
     }
 
     input {
       outline: 0;
-      border-width: 0 0 2px;
+      border-width: 0 0 1px;
       border-color: black;
-      margin-bottom: 20px;
-      margin-left: 50px;
+      margin-bottom: 30px;
+      width: 250px;
+      height: 20px;
+      background-color: #f8f9fa;
+      font-size: 15px;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
     .btn {
       .button(5px 20px);
+      margin-bottom: 30px;
       a {
         text-decoration: none;
         color: @light-main;
+      }
+
+      &:hover {
+        background-color: @dark-main;
       }
     }
 
@@ -56,6 +86,10 @@
 
       a {
         color: @light-main;
+
+        &:hover {
+          color: @dark-main;
+        }
       }
     }
 
@@ -63,6 +97,12 @@
       padding-left: 30px;
       .fab {
         padding-left: 40px;
+        width: 10px;
+        color: gray;
+
+        &:hover {
+          color: black;
+        }
       }
     }
   }
