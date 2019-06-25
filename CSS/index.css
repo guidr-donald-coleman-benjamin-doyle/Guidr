@@ -147,6 +147,16 @@ body {
     margin: 0 auto;
   }
 }
+.container-signup {
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container-signup {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .container {
   max-width: 1200px;
   width: 100%;
@@ -236,12 +246,22 @@ nav .nav-right {
   height: auto;
   position: relative;
 }
+@media (max-width: 500px) {
+  .sign-up .image-flow img {
+    display: none;
+  }
+}
 .sign-up .image-flow h1 {
   position: absolute;
   top: 300px;
   left: 100px;
   width: 100%;
   color: white;
+}
+@media (max-width: 500px) {
+  .sign-up .image-flow h1 {
+    display: none;
+  }
 }
 .sign-up .image-flow p {
   position: absolute;
@@ -250,30 +270,52 @@ nav .nav-right {
   width: 300px;
   color: white;
 }
+@media (max-width: 500px) {
+  .sign-up .image-flow p {
+    display: none;
+  }
+}
 .sign-up .signup-form {
   padding-left: 30px;
   padding-top: 200px;
 }
+@media (max-width: 500px) {
+  .sign-up .signup-form {
+    padding-top: 0;
+    padding-left: 100px;
+  }
+}
 .sign-up .signup-form h1 {
   text-align: center;
   font-weight: 300;
+  padding-bottom: 30px;
 }
 .sign-up .signup-form input {
   outline: 0;
-  border-width: 0 0 2px;
+  border-width: 0 0 1px;
   border-color: black;
-  margin-bottom: 20px;
-  margin-left: 50px;
+  margin-bottom: 30px;
+  width: 250px;
+  height: 20px;
+  background-color: #f8f9fa;
+  font-size: 15px;
+}
+.sign-up .signup-form input:hover {
+  transform: scale(1.1);
 }
 .sign-up .signup-form .btn {
   padding: 5px 20px;
   color: #6668d0;
   font-size: 20px;
   border-radius: 10px;
+  margin-bottom: 30px;
 }
 .sign-up .signup-form .btn a {
   text-decoration: none;
   color: #6668d0;
+}
+.sign-up .signup-form .btn:hover {
+  background-color: #00186f;
 }
 .sign-up .signup-form p {
   text-align: center;
@@ -281,11 +323,19 @@ nav .nav-right {
 .sign-up .signup-form p a {
   color: #6668d0;
 }
+.sign-up .signup-form p a:hover {
+  color: #00186f;
+}
 .sign-up .signup-form .icons {
   padding-left: 30px;
 }
 .sign-up .signup-form .icons .fab {
   padding-left: 40px;
+  width: 10px;
+  color: gray;
+}
+.sign-up .signup-form .icons .fab:hover {
+  color: black;
 }
 footer {
   background-color: #5433ff;
