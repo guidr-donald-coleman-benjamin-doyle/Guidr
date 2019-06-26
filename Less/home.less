@@ -15,27 +15,47 @@
 }
 .intro {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     margin: 0 auto;
     width: 85%;
-    .intro-img {
-        justify-content: flex-end;
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        overflow: hidden;
-        img {
-            max-height: 200px;
-            height: auto;
-            object-fit: cover;
+    .description {
+        width: 40%;
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-content {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        .intro-img {
+            margin-right: 50px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            img {
+                max-height: 200px;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+        .text-content {
+            width: calc(100% - 250px);
         }
     }
-    .text-content {
-        width: calc(100% - 250px);
-    }
 }
-.intro-description {
-    width: 85%;
+.intro-cta {
+    display: flex;
+    flex-direction: column;
+    .cta-add {
+        display: flex;
+        flex-direction: row;
+    }
+    .cta-edit {
+        display: flex;
+        flex-direction: row;
+    }
 }
 .trips {
     display: flex;

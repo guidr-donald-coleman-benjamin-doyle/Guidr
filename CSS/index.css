@@ -173,6 +173,19 @@ a {
   padding-bottom: 20px;
   color: white;
 }
+.text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #6668d0;
+  height: 16px;
+  margin: 5px 0 0 10px;
+}
+.material-icons {
+  color: #6668d0;
+}
+.spacer {
+  height: 20px;
+}
 .home-header {
   position: fixed;
   top: 0;
@@ -359,27 +372,47 @@ footer p {
 }
 .intro {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   margin: 0 auto;
   width: 85%;
 }
-.intro .intro-img {
-  justify-content: flex-end;
+.intro .description {
+  width: 40%;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.intro .flex-content {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+}
+.intro .flex-content .intro-img {
+  margin-right: 50px;
   width: 200px;
   height: 200px;
   border-radius: 50%;
   overflow: hidden;
 }
-.intro .intro-img img {
+.intro .flex-content .intro-img img {
   max-height: 200px;
   height: auto;
   object-fit: cover;
 }
-.intro .text-content {
+.intro .flex-content .text-content {
   width: calc(100% - 250px);
 }
-.intro-description {
-  width: 85%;
+.intro-cta {
+  display: flex;
+  flex-direction: column;
+}
+.intro-cta .cta-add {
+  display: flex;
+  flex-direction: row;
+}
+.intro-cta .cta-edit {
+  display: flex;
+  flex-direction: row;
 }
 .trips {
   display: flex;

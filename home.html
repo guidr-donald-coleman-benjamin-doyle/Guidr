@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="CSS/index.css" />
+    <script type="text/javascript" src="JS/home.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -34,17 +35,33 @@
     </header>
     <div class="home-container">
         <section class="intro">
-            <div class="text-content">
-                <h1 class="intro-title">Jeff Wicks</h1>
-                <h2 class="intro-info">Age: 39 <br>Profession: Mountain Bike Tours <br>Experience: 4 years</h2>
-                <h3 class="intro-cta">
-                    <div class="cta-edit"><i class="material-icons md-24">edit</i></div>
-                    <div class="cta-add"><i class="material-icons md-24">add_circle</i></div>
-                </h3>
+            <div class="description">
+                <svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.28164 10.8766C8.56738 10.6729 7.85312 10.5695 7.15833 10.5695C6.08542 10.5695 5.19016 10.8124 4.49598 11.11C5.16522 8.68208 6.77291 4.49282 9.97552 4.02105C10.2721 3.97734 10.5152 3.76482 10.5961 3.47874L11.296 0.997802C11.3551 0.787992 11.3201 0.563412 11.1993 0.381335C11.0785 0.199259 10.8845 0.0777742 10.667 0.0482321C10.4306 0.0162783 10.1897 0 9.95088 0C6.10671 0 2.29966 3.97613 0.693184 9.66933C-0.249833 13.0094 -0.52635 18.031 1.79651 21.1917C3.09636 22.9603 4.99273 23.9047 7.43302 23.9991C7.44306 23.9994 7.45279 23.9997 7.46283 23.9997C10.4738 23.9997 13.1437 21.9902 13.956 19.1135C14.4412 17.3937 14.2218 15.5901 13.3378 14.0337C12.4633 12.4948 11.0229 11.3731 9.28164 10.8766Z" fill="#EBEBEB"/>
+                    <path d="M28.1295 14.034C27.2549 12.4948 25.8146 11.3731 24.0733 10.8766C23.3591 10.6729 22.6448 10.5695 21.9503 10.5695C20.8774 10.5695 19.9818 10.8124 19.2877 11.11C19.9569 8.68208 21.5646 4.49282 24.7675 4.02105C25.0641 3.97734 25.3068 3.76482 25.3881 3.47874L26.088 0.997802C26.147 0.787992 26.1121 0.563412 25.9913 0.381335C25.8708 0.199259 25.6768 0.0777742 25.4589 0.0482321C25.2229 0.0162783 24.982 0 24.7429 0C20.8987 0 17.0916 3.97613 15.4849 9.66933C14.5422 13.0094 14.2656 18.031 16.5888 21.1923C17.8883 22.9606 19.785 23.9053 22.225 23.9994C22.235 23.9997 22.2448 24 22.2551 24C25.2658 24 27.936 21.9905 28.7482 19.1138C29.2328 17.394 29.0132 15.5901 28.1295 14.034Z" fill="#EBEBEB"/>
+                </svg>
+                <div class="spacer"></div>
+                <p class="intro-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolorum incidunt nihil! Qui totam at officiis, corporis non quidem? Alias quam, in sequi dolore consequatur deleniti placeat reprehenderit voluptate obcaecati. In maiores doloremque, odio facilis amet nulla impedit id libero.</p>
             </div>
-            <div class="intro-img"><img src="https://images.unsplash.com/photo-1498529605908-f357a9af7bf5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="User"></div>
+            <div class="flex-content">
+                <div class="intro-img"><img src="https://images.unsplash.com/photo-1498529605908-f357a9af7bf5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="User">
+                </div>
+                <div class="text-content">
+                    <h1 class="intro-title">Jeff Wicks</h1>
+                    <h2 class="intro-info">Age: 39 <br>Profession: Mountain Bike Tours <br>Experience: 4 years</h2>
+                </div>
+            </div>
         </section>
-        <p class="intro-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolorum incidunt nihil! Qui totam at officiis, corporis non quidem? Alias quam, in sequi dolore consequatur deleniti placeat reprehenderit voluptate obcaecati. In maiores doloremque, odio facilis amet nulla impedit id libero.</p>
+        <h3 class="intro-cta">
+            <div class="cta-edit">
+                <i class="material-icons md-24">edit</i>
+                <div class="text">Edit</div>
+            </div>
+            <div class="cta-add">
+                <i class="material-icons md-24">add_circle</i>
+                <div class="text">Add a trip</div>
+            </div>
+        </h3>
         <section class="trips">
             <h1>Trips</h1>
             <button>Professional</button>
