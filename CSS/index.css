@@ -499,19 +499,19 @@ footer p {
     padding-left: 100px;
   }
 }
-.middle-cta .text {
+.middle-cta .cta-text {
   width: 375px;
   padding-left: 200px;
 }
-.middle-cta .text h3 {
+.middle-cta .cta-text h3 {
   font-weight: 300;
   font-size: 30px;
 }
-.middle-cta .text p {
+.middle-cta .cta-text p {
   color: #546e7a;
 }
 @media (max-width: 500px) {
-  .middle-cta .text {
+  .middle-cta .cta-text {
     padding-left: 100px;
   }
 }
