@@ -1,4 +1,11 @@
-let introDiv = document.querySelector('.text-content');
-let introName = document.querySelector('.intro-title');
-let introInfo = document.querySelector('.intro-info');
-introDiv.style.height = `${introName.clientHeight + introInfo.clientHeight}px`;
+let albumImageContainer = document.querySelectorAll('.album-image');
+let albumImage = document.querySelectorAll('.album-image img');
+let albumContainer = document.querySelector('.album-content');
+// changing image container width
+albumImageContainer.forEach((img) => {
+    img.style.width = `${(albumContainer.clientWidth - 40) / 3}px`;
+});
+// changing image width
+albumImage.forEach((img) => {
+    img.style.width = `${(albumContainer.clientWidth - 40) / 3}px`;
+});
