@@ -1,33 +1,46 @@
+.body-home {
+    background-color: #f8f9fa;
+}
 .home-container {
-    position: relative;
-    top: 140px;
-    bottom: auto;
-    z-index: 1;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 4px;
     max-width: 1200px;
     width: 100%;
-    margin: 0 auto;
-    padding: 35px;
+    margin: 50px auto;
+    padding: 50px 35px;
     p {
         margin: 0 auto;
     }
 }
+.user-intro {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.edit-user {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
 .intro {
     display: flex;
-    flex-direction: row-reverse;
-    margin: 0 auto;
-    width: 85%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 60%;
     .description {
-        width: 40%;
-        margin-left: 50px;
+        margin-top: 35px;
         display: flex;
         flex-direction: column;
+        p {
+            padding-bottom: 0px !important;
+        }
     }
     .flex-content {
         display: flex;
         flex-direction: row;
-        width: 60%;
+        justify-content: space-around;
+        align-items: center;
         .intro-img {
             margin-right: 50px;
             width: 200px;
@@ -42,10 +55,16 @@
         }
         .text-content {
             width: calc(100% - 250px);
+            height: 105px;
+            .intro-info {
+                padding-bottom: 0px !important;
+                color: #757575;
+            }
         }
     }
 }
 .intro-cta {
+    width: 110px;
     display: flex;
     flex-direction: column;
     .cta-add {
@@ -55,12 +74,31 @@
     .cta-edit {
         display: flex;
         flex-direction: row;
+        margin-bottom: 5px;
     }
 }
 .trips {
     display: flex;
-    margin: 0 auto;
-    width: 85%;
+    flex-direction: column;
+    margin: 100px auto;
+    width: 90%;
+    .trips-header {
+        font-size: 3.2rem;
+        text-align: center;
+    }
+    .tab {
+        margin: 0 auto;
+        padding-top: 10px;
+        button {
+            .tab-button;
+        }
+    }
+    .trips-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 .resume {
     display: flex;
