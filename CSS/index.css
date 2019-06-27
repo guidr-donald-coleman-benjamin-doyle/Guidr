@@ -126,12 +126,22 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.tab-button {
+  width: 200px;
+  max-width: 225px;
+  height: 50px;
+  max-height: 50px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+  background-color: white;
+  border-style: none;
+  border-bottom: 3px solid #4364f7;
+}
 html {
+  font-size: 62.5%;
   font-family: "Roboto", sans-serif;
   background-color: #f8f9fa;
-}
-* {
-  font-family: "Roboto", sans-serif;
 }
 body {
   margin: 0;
@@ -164,19 +174,19 @@ body {
   padding: 35px;
 }
 h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   padding-bottom: 20px;
   color: rgba(0, 0, 0, 0.9);
 }
 h2 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 500;
   padding-bottom: 20px;
   color: #454545;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
   padding-bottom: 20px;
   color: #454545;
@@ -196,36 +206,36 @@ a {
 .text {
   font-size: 1.6rem;
   font-weight: 500;
-  color: #6668d0;
+  color: #4364f7;
   height: 16px;
   margin: 5px 0 0 10px;
 }
 .material-icons {
-  color: #6668d0;
+  color: #4364f7;
 }
 .spacer {
-  height: 20px;
+  height: 30px;
 }
-.home-header {
-  position: fixed;
-  top: 0;
-/*   background-color: #5433ff;/ */
-  background-image: none;
+header {
   width: 100%;
   display: flex;
   justify-content: center;
-  background: linear-gradient(to right, #6fb1fc, #4364f7, #0052d4);
-  border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+}
+.home-header {
+  background-image: none;
+  background-color: #4364f7;
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
-  z-index: 2;
 }
 .home-header nav {
-  width: 85%;
+  width: 90%;
+  max-width: 1200px;
   display: flex;
   flex-direction: row;
-}
-.home-header nav .image {
-  width: 30%;
+  justify-content: space-between;
 }
 .home-header nav .text {
   width: 70%;
@@ -236,14 +246,12 @@ a {
 .home-header nav .text a {
   padding: 0 30px 0 0;
   color: white !important;
-  margin-top: 4.5px;
 }
 nav {
-  padding: 30px 0;
+  padding: 25px 0;
 }
 nav a {
   text-decoration: none;
-/*   color: #5433ff; */
   color: white;
   font-size: 20px;
 }
@@ -329,8 +337,8 @@ nav .nav-right {
 .sign-up .signup-form .btn {
   padding: 5px 20px;
   color: #6668d0;
-  font-size: 20px;
-  border-radius: 10px;
+  font-size: 1.6rem;
+  border-radius: 100px;
   margin-bottom: 30px;
 }
 .sign-up .signup-form .btn a {
@@ -451,15 +459,15 @@ footer p {
 .top-content .btn {
   padding: 5px 20px;
   color: #6668d0;
-  font-size: 20px;
-  border-radius: 10px;
+  font-size: 1.6rem;
+  border-radius: 100px;
 }
 @media (max-width: 500px) {
   .top-content .btn {
     padding: 5px 10px;
     color: #6668d0;
-    font-size: 20px;
-    border-radius: 10px;
+    font-size: 1.6rem;
+    border-radius: 100px;
   }
 }
 .top-content .btn a {
@@ -541,43 +549,56 @@ footer p {
 .bottom .content-row .btn {
   padding: 5px 20px;
   color: #6668d0;
-  font-size: 20px;
-  border-radius: 10px;
+  font-size: 1.6rem;
+  border-radius: 100px;
 }
 .bottom .content-row .btn:hover {
   background-color: #00186f;
 }
+.body-home {
+  background-color: #f8f9fa;
+}
 .home-container {
-  position: relative;
-  top: 140px;
-  bottom: auto;
-  z-index: 1;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 4px;
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
-  padding: 35px;
+  margin: 50px auto;
+  padding: 50px 35px;
 }
 .home-container p {
   margin: 0 auto;
 }
+.user-intro {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+.edit-user {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
 .intro {
   display: flex;
-  flex-direction: row-reverse;
-  margin: 0 auto;
-  width: 85%;
+  flex-direction: column-reverse;
+  justify-content: center;
+  width: 60%;
 }
 .intro .description {
-  width: 40%;
-  margin-left: 50px;
+  margin-top: 35px;
   display: flex;
   flex-direction: column;
+}
+.intro .description p {
+  padding-bottom: 0px !important;
 }
 .intro .flex-content {
   display: flex;
   flex-direction: row;
-  width: 60%;
+  justify-content: space-around;
+  align-items: center;
 }
 .intro .flex-content .intro-img {
   margin-right: 50px;
@@ -593,8 +614,14 @@ footer p {
 }
 .intro .flex-content .text-content {
   width: calc(100% - 250px);
+  height: 105px;
+}
+.intro .flex-content .text-content .intro-info {
+  padding-bottom: 0px !important;
+  color: #757575;
 }
 .intro-cta {
+  width: 110px;
   display: flex;
   flex-direction: column;
 }
@@ -605,11 +632,39 @@ footer p {
 .intro-cta .cta-edit {
   display: flex;
   flex-direction: row;
+  margin-bottom: 5px;
 }
 .trips {
   display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  width: 90%;
+}
+.trips .trips-header {
+  font-size: 3.2rem;
+  text-align: center;
+}
+.trips .tab {
   margin: 0 auto;
-  width: 85%;
+  padding-top: 10px;
+}
+.trips .tab button {
+  width: 200px;
+  max-width: 225px;
+  height: 50px;
+  max-height: 50px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+  background-color: white;
+  border-style: none;
+  border-bottom: 3px solid #4364f7;
+}
+.trips .trips-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .resume {
   display: flex;
@@ -620,4 +675,61 @@ footer p {
   display: flex;
   margin: 0 auto;
   width: 85%;
+}
+.card {
+  width: 26.3%;
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  padding-bottom: 1.6rem;
+  margin: 50px 0;
+}
+.card .trip-image {
+  border-radius: 4px 4px 0 0;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+.card .card-title {
+  display: flex;
+  flex-direction: row;
+}
+.card .card-title .user-image {
+  margin: 1rem;
+  height: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.card .card-title .user-image img {
+  max-height: 50px;
+  height: auto;
+  object-fit: cover;
+}
+.card .card-title .card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card .card-title .card-info .trip-title {
+  margin-left: 1rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  color: rgba(0, 0, 0, 0.9);
+}
+.card .card-title .card-info .trip-location {
+  padding-bottom: 1rem;
+  margin-left: 1rem;
+}
+.card .trip-description {
+  padding: 1.6rem 1rem;
+  color: rgba(0, 0, 0, 0.45);
+}
+.card .card-link {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #4364f7;
+  padding: 1rem;
 }

@@ -1,11 +1,7 @@
 html {
-  // font-size: 62.5%;
+  font-size: 62.5%;
   font-family: "Roboto", sans-serif;
   background-color: @html-background;
-}
-
-* {
-  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -41,21 +37,21 @@ body {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   padding-bottom: 20px;
   color: rgba(0, 0, 0, 0.9);
 }
 
 h2 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 500;
   padding-bottom: 20px;
   color: #454545
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
   padding-bottom: 20px;
   color: #454545
@@ -78,15 +74,25 @@ a {
 .text {
   font-size: 1.6rem;
   font-weight: 500;
-  color: @light-main;
+  color: #4364f7;
   height: 16px;
   margin: 5px 0 0 10px;
 }
 
 .material-icons {
-  color: @light-main;
+  color: #4364f7;
 }
 
 .spacer {
-  height: 20px;
+  height: 30px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
 }
