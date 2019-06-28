@@ -1,68 +1,64 @@
 class Tablink {
   constructor(tabElement) {
+    this.i = 0;
     this.tabElement = tabElement;
     this.tabData = this.tabElement.dataset.tab;
 
-    this.cards = document.querySelectorAll(`.card[data-tab="${this.tabData}"]`);
+    this.add();
+    this.remove();
 
-    this.cards = Array.from(this.cards).map(card => new TabCard(card));
-
-    this.tabElement.addEventListener("click", () => {
+    tabs[this.i].addEventListener("click", () => {
       this.selectTab();
-    });
+      this.selectCard();
+      this.i + 1;
+    })
+  }
+  add() {
+    cards[this.i].classList.add('active-tab');
+    cards[this.i].classList.remove('not-active');
+    tabs[this.i].classList.add('active-tab');
+  }
+
+  remove() {
+    cards[this.i + 1].classList.add('not-active');
+    cards[this.i + 1].classList.remove('active-tab');
+    tabs[this.i + 1].classList.remove('active-tab');
+  }
+
+  selectCard() {
+    if (this.i === 0) {
+      cards[this.i].classList.add("card");
+      cards[this.i].classList.remove("not-active");
+      this.i = 1;
+      cards[this.i].classList.add("not-active");
+      cards[this.i].classList.remove("card");
+
+    } else {
+      cards[this.i].classList.add("card");
+      cards[this.i].classList.remove("not-active");
+      this.i = 0;
+      cards[this.i].classList.add("not-active");
+      cards[this.i].classList.remove("card");
+    }
   }
 
   selectTab() {
-    const tabs = document.querySelectorAll(".tab");
+    if (this.i === 0) {
+      tabs[this.i].classList.add("active-tab");
+      tabs[this.i + 1].classList.remove("active-tab");
+    } else {
+      tabs[this.i].classList.add("active-tab");
+      tabs[this.i - 1].classList.remove("active-tab");
 
-    tabs.forEach(cardElement => {
-      cardElement.classList.remove("active-tab");
-    });
-
-    const cards = document.querySelectorAll(".card");
-
-    cards.forEach(card => {
-      card.style.display = "none";
-    });
-
-    this.cards.forEach(card => card.selectCard());
+    }
   }
 }
-
-class TabCard {
-  constructor(cardElement) {
-
-    this.cardElement = cardElement;
-  }
-  selectCard() {
-
-    this.cardElement.style.display = "flex";
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 
 let tabs = document.querySelectorAll(".tab");
+const cards = document.querySelectorAll(".card");
 
-tabs.forEach(tab => {
-  return new TabLink(tab);
-});
+tabs.forEach(tab => new Tablink(tab));
+
