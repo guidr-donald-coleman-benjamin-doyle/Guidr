@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="stylesheet" href="css/index.css" />
-  <script src="#"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet" />
 
   <title>About Us</title>
@@ -55,24 +54,59 @@
     <section class="middle-content">
       <h2>WHO WE ARE</h2>
 
-      <div class="carousel">
-        <img class="slide image-show" src="img/image3.png" />
-        <img class="slide image-noshow" src="img/img1.png" />
+      <!-- Tabs Component -->
+      <div class="tabs">
+        <div class="names">
+          <div data-tab="dj" class="tab">DJ</div>
+          <div data-tab="ben" class="tab">Ben</div>
+        </div>
       </div>
-    </section>
+
+      <div class="cards-container">
+        <!-- Cards -->
+        <div class="card" data-tab="dj">
+          <h3>DJ Coleman</h3>
+          <div class="content">
+            <div class="img-container">
+              <img src="img/image3.png" />
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime eum cupiditate a? Aliquam veritatis
+              voluptate reprehenderit. Sequi facere quae, vitae quos suscipit hic placeat culpa enim dolor, qui maiores
+              iusto.</p>
+          </div>
+        </div>
+
+        <div class="card" data-tab="ben">
+          <h3>Ben Doyle</h3>
+          <div class="content">
+            <div class="img-container">
+              <img src="img/img1.png" />
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime eum cupiditate a? Aliquam veritatis
+              voluptate reprehenderit. Sequi facere quae, vitae quos suscipit hic placeat culpa enim dolor, qui maiores
+              iusto.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
   </div>
 </body>
+<script src="js/about.js"></script>
 <footer>
-    <div class="footer-div">
-      <a href="#" class="footer-left">Guidr</a>
-      <a href="#" class="footer-right">Support</a>
-      <a href="#" class="footer-right">Create a free account</a>
-    </div>
-    <div class="footer-mid">
-      <a href="#">Privacy and cookies</a>
-      <a href="#">Legal</a>
-      <a href="#">Contact Us</a>
-    </div>
-    <p>&copy; 2019 GuidR</p>
+  <div class="footer-div">
+
+    <a href="#" class="footer-left">Guidr</a>
+
+
+    <a href="#" class="footer-right">Create a free account</a>
+  </div>
+  <div class="footer-mid">
+    <a href="#">Privacy and cookies</a>
+    <a href="#">Legal</a>
+    <a href="#">Contact Us</a>
+  </div>
+  <p>&copy; 2019 GuidR</p>
 </footer>
+
 </html>
