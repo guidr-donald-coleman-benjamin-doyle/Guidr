@@ -942,9 +942,11 @@ footer p {
 .card .card-title .card-info .trip-location {
   padding-bottom: 1rem;
   margin-left: 1rem;
+  padding-top: 0px;
 }
 .card .trip-description {
   padding: 1.6rem 1rem;
+  padding-top: 0px;
   color: rgba(0, 0, 0, 0.45);
 }
 .card .card-link {
@@ -1006,8 +1008,8 @@ footer p {
   box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   padding-bottom: 1.6rem;
-  margin: 10% auto;
-  width: 80%;
+  margin: 5% auto;
+  width: 50%;
   background-color: white;
   display: flex;
   flex-direction: column;
