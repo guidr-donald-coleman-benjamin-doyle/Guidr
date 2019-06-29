@@ -251,7 +251,7 @@ header {
 }
 .home-header {
   background-image: none;
-  background-color: #4364f7;
+  background: linear-gradient(to right, #6fb1fc, #4364f7, #0052d4);
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .home-header nav {
@@ -413,6 +413,51 @@ html {
   margin-left: 460px;
   font-size: 40px;
 }
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: none;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+@media (min-width: 1200px) {
+  .cards-container .cards-container {
+    width: 1200px;
+  }
+}
+.cards-container .card {
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  flex-direction: column;
+  background-color: #fff;
+  width: 380px;
+  margin-bottom: 16px;
+  padding: 24px;
+  padding-left: 10px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.cards-container .card .headline {
+  font-size: 25px;
+  font-family: Didot, serif;
+}
+.cards-container .card .img-container {
+  padding-right: 10px;
+  border-right: 1px solid lightgrey;
+  height: 40px;
+}
+.cards-container .card .img-container img {
+  width: 210px;
+  height: auto;
+}
+.cards-container .card p {
+  padding-top: 110px;
+}
 .tabs {
   border-bottom: 1px solid lightgrey;
   display: flex;
@@ -459,60 +504,6 @@ html {
   background-color: #fff;
   color: #333;
   border: 2px solid #333;
-}
-.cards-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: none;
-  flex-direction: row;
-  width: 100%;
-  margin-top: 16px;
-  flex-wrap: wrap;
-}
-@media (min-width: 1200px) {
-  .cards-container {
-    width: 1200px;
-  }
-}
-.cards-container .card {
-  border-bottom: 1px solid lightgrey;
-  display: flex;
-  justify-content: space-between;
-  align-items: none;
-  flex-direction: column;
-  background-color: #fff;
-  width: 380px;
-  margin-bottom: 16px;
-  padding: 24px;
-}
-.cards-container .card .headline {
-  font-size: 25px;
-  font-family: Didot, serif;
-}
-.cards-container .card .author {
-  display: flex;
-  justify-content: none;
-  align-items: center;
-  flex-direction: row;
-  margin-top: 15px;
-}
-.cards-container .card .img-container {
-  padding-right: 10px;
-  border-right: 1px solid lightgrey;
-  height: 40px;
-}
-.cards-container .card .img-container img {
-  width: 210px;
-  height: auto;
-}
-.card p {
-  padding-top: 110px;
-}
-.cards-container .card {
-  padding-left: 10px;
-  font-size: 12px;
-  letter-spacing: 1px;
-  font-weight: bold;
 }
 .not-active {
   display: none;
@@ -582,7 +573,7 @@ footer p {
   }
 }
 .top-content .btn {
-  width: 5px 20px;
+  width: 30%;
   padding: 15px 0;
   color: #6668d0;
   font-size: 1.6rem;
@@ -674,7 +665,7 @@ footer p {
   color: #546e7a;
 }
 .bottom .content-row .btn {
-  width: 5px 20px;
+  width: 30%;
   padding: 15px 0;
   color: #6668d0;
   font-size: 1.6rem;

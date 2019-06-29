@@ -61,4 +61,3 @@ let tabs = document.querySelectorAll(".tab");
 const cards = document.querySelectorAll(".card");
 
 tabs.forEach(tab => new Tablink(tab));
-
