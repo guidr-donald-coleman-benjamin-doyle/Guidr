@@ -385,6 +385,9 @@ nav .nav-right {
 .sign-up .sign-up-container .signup-form .icons .fab:hover {
   color: black;
 }
+.input-text::placeholder {
+  color: #6668d0;
+}
 html {
   background-color: white;
 }
