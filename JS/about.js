@@ -38,9 +38,9 @@ class Tablink {
   }
 }
 
-// declare nodelist
 let tabs = document.querySelectorAll(".tab");
-let cards = document.querySelectorAll(".card");
+const cards = document.querySelectorAll(".card");
 
-// create new instance of class
-tabs.forEach(e => new Tablink(e));
+tabs.forEach(tab => new Tablink(tab));
+
+

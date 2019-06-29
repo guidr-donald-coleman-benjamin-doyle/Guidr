@@ -6,7 +6,7 @@
   padding-bottom: 50px;
   padding-top: 30px;
 
-  @media (max-width: 500px) {
+  @media @phone {
     padding-left: 100px;
 
     hr {
@@ -19,7 +19,7 @@
     font-weight: 400;
     color: white;
 
-    @media (max-width: 500px) {
+    @media @phone {
       font-size: 20px;
     }
   }
@@ -28,16 +28,16 @@
     width: 500px;
     color: white;
 
-    @media (max-width: 500px) {
+    @media @phone {
       font-size: 15px;
       width: 340px;
     }
   }
 
   .btn {
-    .button(5px 20px);
+    .button(30%);
 
-    @media (max-width: 500px) {
+    @media @phone {
       .button(5px 10px);
     }
 
@@ -55,7 +55,7 @@
 .middle-cta {
   padding-top: 50px;
 
-  @media (max-width: 500px) {
+  @media @phone {
     vertical-align: middle;
 
     hr {
@@ -69,7 +69,7 @@
     padding-left: 270px;
     border-radius: 40%;
 
-    @media (max-width: 500px) {
+    @media @phone {
       padding-left: 100px;
     }
   }
@@ -86,7 +86,7 @@
     p {
       color: #546e7a;
     }
-    @media (max-width: 500px) {
+    @media @phone {
       padding-left: 100px;
     }
   }
@@ -101,7 +101,7 @@
     .bottom-text {
       padding-left: 50px;
 
-      @media (max-width: 500px) {
+      @media @phone {
         padding-left: 30px;
       }
     }
@@ -127,7 +127,7 @@
     }
 
     .btn {
-      .button(5px 20px);
+      .button(30%);
 
       &:hover {
         background-color: @dark-main;
