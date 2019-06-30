@@ -385,6 +385,12 @@ nav .nav-right {
 .sign-up .sign-up-container .signup-form .icons .fab:hover {
   color: black;
 }
+.input-text::placeholder {
+  color: #6668d0;
+}
+input {
+  color: #6668d0;
+}
 html {
   background-color: white;
 }
@@ -393,6 +399,7 @@ html {
   padding: 60px;
   margin: 0 auto;
   max-width: 850px;
+  box-shadow: -2px 7px #41423e;
 }
 .about-guidr h1 {
   color: white;
@@ -442,10 +449,14 @@ html {
   padding-right: 10px;
   border-right: 1px solid lightgrey;
   height: 40px;
+  width: 35%;
+  overflow: hidden;
 }
 .cards-container .card .img-container img {
-  width: 210px;
+  max-width: 100%;
+  width: auto;
   height: auto;
+  object-fit: cover;
 }
 .cards-container .card p {
   padding-top: 110px;
@@ -846,6 +857,15 @@ footer p {
   margin: 0 auto;
   font-weight: 400;
   color: #757575;
+}
+.resume-end .content-title {
+  text-align: center;
+}
+.resume-end .content-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 20px;
 }
 .card {
   min-width: 275px;
