@@ -1,7 +1,9 @@
+// DOM elements
 let expandButton = document.querySelectorAll('.card-link');
 let closeButton = document.querySelector('.i-card-close');
 let tripPopup = document.querySelector('.individual-trip-card');
 
+// button clicked
 expandButton.forEach((btn) => {
     btn.addEventListener('click', () => {
         tripPopup.style.display = 'block';
@@ -11,10 +13,12 @@ closeButton.addEventListener('click', () => {
     tripPopup.style.display = 'none';
 });
 
+// DOM elements
 let tripCardContainer = document.querySelector('.trips-content');
 let iTripCardContainer = document.querySelector('.i-trips-content');
 let tripCard = document.querySelectorAll('.card');
 
+// determine width of cards
 let checkURL = () => {
     if (window.location.href.indexOf('trips') > -1) {
         tripCard.forEach((card) => {
