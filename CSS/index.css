@@ -399,9 +399,8 @@ html {
   padding: 60px;
   margin: 0 auto;
   max-width: 850px;
-  box-shadow: -2px 7px #41423e;
 }
-.about-guidr h1 {
+h1 {
   color: white;
   text-align: center;
   font-weight: 300;
@@ -409,7 +408,7 @@ html {
   max-width: 800px;
   margin: 0 auto;
 }
-.about-guidr p {
+p {
   color: white;
   margin: 0 auto;
   text-align: center;
@@ -424,11 +423,6 @@ html {
   width: 100%;
   margin-top: 16px;
 }
-@media (min-width: 1200px) {
-  .cards-container .cards-container {
-    width: 1200px;
-  }
-}
 .cards-container .card {
   display: none;
   margin: 0 auto 16px;
@@ -436,30 +430,22 @@ html {
   background-color: #ffffff;
   width: 380px;
   padding: 24px;
-  padding-left: 10px;
   font-size: 12px;
   letter-spacing: 1px;
   font-weight: bold;
 }
-.cards-container .card .headline {
-  font-size: 25px;
-  font-family: Didot, serif;
-}
 .cards-container .card .img-container {
-  padding-right: 10px;
   border-right: 1px solid lightgrey;
-  height: 40px;
-  width: 35%;
+  height: 50%;
   overflow: hidden;
 }
-.cards-container .card .img-container img {
-  max-width: 100%;
-  width: auto;
+.cards-container .card .img-container .card-img {
   height: auto;
   object-fit: cover;
 }
 .cards-container .card p {
-  padding-top: 110px;
+  padding-top: 24px;
+  color: #757575;
 }
 .cards-container .card-selected {
   display: block;
