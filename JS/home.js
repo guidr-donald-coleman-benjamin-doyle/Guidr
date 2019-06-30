@@ -1,3 +1,4 @@
+// DOM elements
 let albumImageContainer = document.querySelectorAll('.album-image');
 let albumImage = document.querySelectorAll('.album-image img');
 let albumContainer = document.querySelector('.album-content');

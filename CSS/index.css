@@ -417,17 +417,12 @@ html {
 }
 .middle-content h2 {
   margin-top: 50px;
-  margin-left: 460px;
+  text-align: center;
   font-size: 40px;
 }
 .cards-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: none;
-  flex-direction: row;
   width: 100%;
   margin-top: 16px;
-  flex-wrap: wrap;
 }
 @media (min-width: 1200px) {
   .cards-container .cards-container {
@@ -435,14 +430,11 @@ html {
   }
 }
 .cards-container .card {
+  display: none;
+  margin: 0 auto 16px;
   border-bottom: 1px solid lightgrey;
-  display: flex;
-  justify-content: space-between;
-  align-items: none;
-  flex-direction: column;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 380px;
-  margin-bottom: 16px;
   padding: 24px;
   padding-left: 10px;
   font-size: 12px;
@@ -469,55 +461,27 @@ html {
 .cards-container .card p {
   padding-top: 110px;
 }
-.tabs {
-  border-bottom: 1px solid lightgrey;
+.cards-container .card-selected {
+  display: block;
+}
+.tab {
+  margin: 1rem auto;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-  height: 47px;
 }
-@media (max-width: 500px) {
-  .tabs {
-    width: 1280px;
-  }
+.tab .person {
+  width: 200px;
+  max-width: 225px;
+  height: 50px;
+  max-height: 50px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+  background-color: white;
+  border: none;
 }
-.tabs .topics {
-  display: flex;
-  justify-content: none;
-  align-items: center;
-  flex-direction: row;
-}
-.tabs .topics .title {
-  font-size: 12px;
-  letter-spacing: 1px;
-  font-weight: bold;
-}
-.tabs .topics .tab {
-  display: flex;
-  justify-content: none;
-  align-items: center;
-  flex-direction: row;
-  color: #fff;
-  background-color: #fff;
-  margin: 0 5px;
-  padding: 2px 10px;
-  font-size: 12px;
-  letter-spacing: 2px;
-  cursor: pointer;
-  font-weight: bold;
-}
-.tabs .topics .tab:hover {
-  text-decoration: underline;
-}
-.active-tab {
-  background-color: #fff;
-  color: #333;
-  border: 2px solid #333;
-}
-.not-active {
-  display: none;
+.tab .person-selected {
+  border-bottom: 3px solid #4364f7;
 }
 footer {
   background-color: #5433ff;
@@ -869,7 +833,8 @@ footer p {
 .i-resume {
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
+  margin: 0 auto 50px;
+  width: 90%;
 }
 .i-resume .cta-resume {
   margin: 1rem auto;
@@ -903,7 +868,6 @@ footer p {
   padding-top: 20px;
 }
 .card {
-  width: 26.3%;
   min-width: 275px;
   box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -965,6 +929,7 @@ footer p {
   font-weight: 500;
   color: #4364f7;
   padding: 0 1rem;
+  cursor: pointer;
 }
 .trip-container {
   background-color: white;
@@ -1005,6 +970,7 @@ footer p {
   justify-content: space-between;
 }
 .individual-trip-card {
+  display: none;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -1013,12 +979,12 @@ footer p {
   top: 0;
   overflow: auto;
   background-color: #000000;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .individual-trip-card .i-card {
   box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  padding-bottom: 1.6rem;
+  padding-bottom: 2.4rem;
   margin: 5% auto;
   width: 50%;
   background-color: white;
@@ -1033,41 +999,55 @@ footer p {
   height: auto;
   object-fit: cover;
 }
-.individual-trip-card .i-card .i-card-title {
+.individual-trip-card .i-card .i-text-container {
+  width: 95%;
+  margin: 0 auto;
+}
+.individual-trip-card .i-card .i-text-container .i-card-title {
   display: flex;
   flex-direction: row;
   padding-top: 6px;
 }
-.individual-trip-card .i-card .i-card-title .i-user-image {
+.individual-trip-card .i-card .i-text-container .i-card-title .i-user-image {
   margin: 1rem;
   height: 50%;
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   overflow: hidden;
 }
-.individual-trip-card .i-card .i-card-title .i-user-image img {
-  max-height: 50px;
+.individual-trip-card .i-card .i-text-container .i-card-title .i-user-image img {
+  max-height: 75px;
   height: auto;
   object-fit: cover;
 }
-.individual-trip-card .i-card .i-card-title .i-card-info {
+.individual-trip-card .i-card .i-text-container .i-card-title .i-card-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.individual-trip-card .i-card .i-card-title .i-card-info .i-trip-title {
+.individual-trip-card .i-card .i-text-container .i-card-title .i-card-info .i-trip-title {
   margin-left: 1rem;
   font-weight: 500;
   padding-bottom: 0.5rem;
   padding-top: 1rem;
   color: rgba(0, 0, 0, 0.9);
+  font-size: 2.4rem;
 }
-.individual-trip-card .i-card .i-card-title .i-card-info .i-trip-location {
+.individual-trip-card .i-card .i-text-container .i-card-title .i-card-info .i-trip-location {
   padding-bottom: 1rem;
   margin-left: 1rem;
+  font-size: 2rem;
 }
-.individual-trip-card .i-card .i-trip-description {
-  padding: 1.6rem 1rem;
+.individual-trip-card .i-card .i-text-container .i-trip-description {
+  padding: 1.6rem 1rem 3.2rem;
   color: rgba(0, 0, 0, 0.45);
+  font-size: 2rem;
+}
+.individual-trip-card .i-card .i-text-container .i-card-close {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #4364f7;
+  padding: 0 1rem;
+  cursor: pointer;
 }
