@@ -400,7 +400,7 @@ html {
   margin: 0 auto;
   max-width: 850px;
 }
-h1 {
+.about-h1 {
   color: white;
   text-align: center;
   font-weight: 300;
@@ -408,7 +408,7 @@ h1 {
   max-width: 800px;
   margin: 0 auto;
 }
-p {
+.about-p {
   color: white;
   margin: 0 auto;
   text-align: center;
@@ -648,6 +648,7 @@ footer p {
 }
 .home-container p {
   margin: 0 auto;
+  text-align: left;
 }
 .user-intro {
   width: 90%;
