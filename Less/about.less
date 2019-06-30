@@ -1,13 +1,33 @@
 html {
   background-color: white;
  }
+
+ .about-container {
+  background-color: white;
+  border-radius: 4px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 50px 0;
+  p {
+      margin: 0 auto;
+      text-align: left;
+  }
+}
  
- .about-guidr {
-  background-color: #5B5C57;
-  padding: 60px;
-  margin: 0 auto;
-  max-width: 850px;
- }
+  .about-guidr {
+    background-color: #5B5C57;
+    padding: 60px;
+    margin: 0 auto;
+    max-width: 850px;
+  
+    @media @phone{
+      max-width: 500px;
+      height: auto;
+    }
+   }
+
+ 
  
  
   .about-h1 {
@@ -88,5 +108,9 @@ html {
   }
   .person-selected {
     border-bottom: 3px solid #4364f7;
+
+    &:hover{
+      transform: scale(1.05);
+    }
   }
 }
