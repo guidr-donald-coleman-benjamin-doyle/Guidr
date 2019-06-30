@@ -1,63 +1,36 @@
-class Tablink {
-  constructor(tabElement) {
-    this.i = 0;
-    this.tabElement = tabElement;
-    this.tabData = this.tabElement.dataset.tab;
+class TabLink {
+  constructor(e) {
+    this.e = e;
+    this.data = this.e.dataset.tab;
+    this.itemElement = document.querySelector(`.card[data-tab="${this.data}"]`);
+    this.tabItem = new TabItem(this.itemElement);
+    this.e.addEventListener('click', (event) => {
+      this.select();
+    });
+  };
 
-    this.add();
-    this.remove();
-
-    tabs[this.i].addEventListener("click", () => {
-      this.selectTab();
-      this.selectCard();
-      this.i + 1;
-    })
-  }
-  add() {
-    cards[this.i].classList.add('active-tab');
-    cards[this.i].classList.remove('not-active');
-    tabs[this.i].classList.add('active-tab');
-  }
-
-  remove() {
-    cards[this.i + 1].classList.add('not-active');
-    cards[this.i + 1].classList.remove('active-tab');
-    tabs[this.i + 1].classList.remove('active-tab');
-  }
-
-  selectCard() {
-    if (this.i === 0) {
-      cards[this.i].classList.add("card");
-      cards[this.i].classList.remove("not-active");
-      this.i = 1;
-      cards[this.i].classList.add("not-active");
-      cards[this.i].classList.remove("card");
-
-    } else {
-      cards[this.i].classList.add("card");
-      cards[this.i].classList.remove("not-active");
-      this.i = 0;
-      cards[this.i].classList.add("not-active");
-      cards[this.i].classList.remove("card");
-    }
-  }
-
-  selectTab() {
-    if (this.i === 0) {
-      tabs[this.i].classList.add("active-tab");
-      tabs[this.i + 1].classList.remove("active-tab");
-    } else {
-      tabs[this.i].classList.add("active-tab");
-      tabs[this.i - 1].classList.remove("active-tab");
-
-    }
+  select() {
+    const tabs = document.querySelectorAll('.person');
+    Array.from(tabs).forEach((e) => {
+      e.classList.remove('person-selected');
+    });
+    this.e.classList.add('person-selected');
+    this.tabItem.select();
   }
 }
 
+class TabItem {
+  constructor(e) {
+    this.e = e;
+  }
 
+  select() {
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      card.classList.remove('card-selected');
+    })
+    this.e.classList.add('card-selected');
+  }
+}
 
-
-let tabs = document.querySelectorAll(".tab");
-const cards = document.querySelectorAll(".card");
-
-tabs.forEach(tab => new Tablink(tab));
+tabs = document.querySelectorAll('.person').forEach(tab => new TabLink(tab));

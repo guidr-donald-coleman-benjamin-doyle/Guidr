@@ -893,6 +893,15 @@ footer p {
   font-weight: 400;
   color: #757575;
 }
+.resume-end .content-title {
+  text-align: center;
+}
+.resume-end .content-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 20px;
+}
 .card {
   width: 26.3%;
   min-width: 275px;
