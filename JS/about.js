@@ -1,46 +1,36 @@
-class Tablink {
+class TabLink {
   constructor(e) {
-    // set starting tab and card
-    this.i = 0;
-    this.add();
-    this.remove();
+    this.e = e;
+    this.data = this.e.dataset.tab;
+    this.itemElement = document.querySelector(`.card[data-tab="${this.data}"]`);
+    this.tabItem = new TabItem(this.itemElement);
+    this.e.addEventListener('click', (event) => {
+      this.select();
+    });
+  };
 
-    // tab is clicked
-    e.addEventListener('click', () => {
-      this.left();
-  });
-  }
-
-  add() {
-  
-  }
-
-  remove() {
-    
-  }
-
-  selectCard() {
-    if (this.i === 0) {
-
-    } 
-    else {
-  
-    }
-  }
-
-  selectTab() {
-    if (this.i === 0) {
-      
-    } 
-    else {
-      
-    }
+  select() {
+    const tabs = document.querySelectorAll('.person');
+    Array.from(tabs).forEach((e) => {
+      e.classList.remove('person-selected');
+    });
+    this.e.classList.add('person-selected');
+    this.tabItem.select();
   }
 }
 
-let tabs = document.querySelectorAll(".tab");
-const cards = document.querySelectorAll(".card");
+class TabItem {
+  constructor(e) {
+    this.e = e;
+  }
 
-tabs.forEach(tab => new Tablink(tab));
+  select() {
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      card.classList.remove('card-selected');
+    })
+    this.e.classList.add('card-selected');
+  }
+}
 
-
+tabs = document.querySelectorAll('.person').forEach(tab => new TabLink(tab));
