@@ -845,10 +845,10 @@ footer p {
   font-weight: 400;
   color: #757575;
 }
-.resume-end .content-title {
+.i-resume-end .i-content-title {
   text-align: center;
 }
-.resume-end .content-text {
+.i-resume-end .i-content-text {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
