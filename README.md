@@ -20,3 +20,5 @@ Based on the "duration" of each trip, in hours, aggregate the trip durations and
 
 Allow users to print off their outdoor resume in PDF format so that they can hand it off to potential employers/guide licenseing organizations.
 To enable screen reader support, press ⌘+Option+Z To learn about keyboard shortcuts, press ⌘slash
+
+View Guidr Live on Netlify : https://jovial-kare-841554.netlify.com/.
