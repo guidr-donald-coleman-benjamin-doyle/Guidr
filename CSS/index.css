@@ -143,6 +143,9 @@ table {
   display: flex;
   flex-direction: row;
 }
+*:focus {
+  outline: none !important;
+}
 html {
   height: 100%;
   font-size: 62.5%;
