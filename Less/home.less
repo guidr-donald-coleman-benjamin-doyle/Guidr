@@ -66,11 +66,14 @@
         }
     }
 }
+.cta-arrow {
+    .icon-button-reverse;
+}
 .cta-add {
-    .icon-button;
+    .icon-button-reverse;
 }
 .cta-edit {
-    .icon-button;
+    .icon-button-reverse;
 }
 .trips {
     display: flex;
@@ -80,12 +83,19 @@
     .border-bottom(0px);
     .tab {
         margin: 1rem auto;
-        button {
-            .tab-button;
-
-            &:hover{
-                transform: scale(1.05);
-            }
+        .trip-category {
+            width: 200px;
+            max-width: 225px;
+            height: 50px;
+            max-height: 50px;
+            font-size: 1.6rem;
+            font-weight: 500;
+            text-align: center;
+            background-color: white;
+            border-style: none;
+        }
+        .trip-category-selected {
+            border-bottom: 3px solid #4364f7;
         }
     }
     .trips-content {
@@ -154,4 +164,8 @@
             color: #757575;
         }
     }
+}
+a {
+    margin: 0 auto;
+    padding-bottom: 0px;
 }

@@ -45,7 +45,7 @@
         </nav>
     </header>
     <div class="individual-trip-card">
-        <div class="i-card" data-tab="professional">
+        <div class="i-card" data-tab="">
             <img class="i-trip-image" src="https://images.unsplash.com/photo-1560065569-21beb63d2b0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="">
             <div class="i-text-container">
                 <div class="i-card-title">
@@ -56,7 +56,7 @@
                         <p class="i-trip-location">Boulder, CO</p>
                     </div>
                 </div>
-                <p class="i-trip-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem facilis aliquid temporibus, id nemo, recusandae, voluptate incidunt officiis veniam similique sequi blanditiis? Vitae, velit? Quam, voluptas praesentium, molestiae deserunt officiis error quia a atque, quae illo provident excepturi. Accusantium eligendi earum recusandae quisquam cupiditate aliquid, blanditiis debitis nihil sint veniam quis, dolorem illo! Sequi ab enim mollitia exercitationem expedita, assumenda facere debitis distinctio nisi perferendis odit? Sequi, sed quod quam expedita neque nam odio temporibus rem saepe, eius sapiente sit!</p>
+                <p class="i-trip-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea consectetur tempora dignissimos dolorem repudiandae pariatur ducimus, laudantium voluptatem, doloribus, eum rem veritatis rerum ipsum. Soluta nulla praesentium quas unde illo labore dolor necessitatibus fugiat blanditiis aliquam libero numquam, deleniti quos.</p>
                 <span class="i-card-close">CLOSE</span>
             </div>
         </div>
@@ -69,27 +69,27 @@
                 <div class="text">Add a trip</div>
             </div>
             <div class="i-tab">
-                <button>ALL</button>
-                <button>PROFESSIONAL</button>
-                <button>PERSONAL</button>
+                <button class="trip-category trip-category-selected" data-tab="all">ALL</button>
+                <button class="trip-category" data-tab="professional">PROFESSIONAL</button>
+                <button class="trip-category" data-tab="personal">PERSONAL</button>
             </div>
             <div class="i-trips-content">
                 <div class="card" data-tab="professional">
-                    <img class="trip-image" src="https://images.unsplash.com/photo-1560065569-21beb63d2b0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="">
+                    <img class="trip-image" data-number="1" src="https://images.unsplash.com/photo-1560065569-21beb63d2b0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="">
                     <div class="card-title">
                         <div class="user-image"><img src="https://images.unsplash.com/photo-1498529605908-f357a9af7bf5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="User">
                         </div>
                         <div class="card-info">
-                            <h2 class="trip-title">Pamora River</h2>
-                            <p class="trip-location">Boulder, CO</p>
+                            <h2 class="trip-title" data-number="1">Pamora River</h2>
+                            <p class="trip-location" data-number="1">Boulder, CO</p>
                         </div>
 
                     </div>
                     <p class="trip-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
-                    <span class="card-link">SEE MORE</span>
+                    <span class="card-link" data-number="1">SEE MORE</span>
                 </div>
                 <div class="card" data-tab="personal">
-                    <img class="trip-image"
+                    <img class="trip-image" data-number="2"
                         src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
                         alt="">
                     <div class="card-title">
@@ -98,15 +98,15 @@
                                 alt="User">
                         </div>
                         <div class="card-info">
-                            <h2 class="trip-title">Pamora River</h2>
-                            <p class="trip-location">Boulder, CO</p>
+                            <h2 class="trip-title" data-number="2">Andromeda</h2>
+                            <p class="trip-location" data-number="2">Milky Way, Space</p>
                         </div>
                     </div>
                     <p class="trip-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
-                    <span class="card-link">SEE MORE</span>
+                    <span class="card-link" data-number="2">SEE MORE</span>
                 </div>
                 <div class="card" data-tab="professional">
-                    <img class="trip-image"
+                    <img class="trip-image" data-number="3"
                         src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
                         alt="">
                     <div class="card-title">
@@ -115,15 +115,15 @@
                                 alt="User">
                         </div>
                         <div class="card-info">
-                            <h2 class="trip-title">Pamora River</h2>
-                            <p class="trip-location">Boulder, CO</p>
+                            <h2 class="trip-title" data-number="3">Kluane National Park</h2>
+                            <p class="trip-location" data-number="3">Canada</p>
                         </div>
                     </div>
                     <p class="trip-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
-                    <span class="card-link">SEE MORE</span>
+                    <span class="card-link" data-number="3">SEE MORE</span>
                 </div>
                 <div class="card" data-tab="personal">
-                    <img class="trip-image"
+                    <img class="trip-image" data-number="4"
                         src="https://images.unsplash.com/photo-1524654458049-e36be0721fa2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
                         alt="">
                     <div class="card-title">
@@ -132,15 +132,15 @@
                                 alt="User">
                         </div>
                         <div class="card-info">
-                            <h2 class="trip-title">Pamora River</h2>
-                            <p class="trip-location">Boulder, CO</p>
+                            <h2 class="trip-title" data-number="4">Gran Zebrù</h2>
+                            <p class="trip-location" data-number="4">Italy</p>
                         </div>
                     </div>
                     <p class="trip-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
-                    <span class="card-link">SEE MORE</span>
+                    <span class="card-link" data-number="4">SEE MORE</span>
                 </div>
                 <div class="card" data-tab="professional">
-                    <img class="trip-image"
+                    <img class="trip-image" data-number="5"
                         src="https://images.unsplash.com/photo-1458668383970-8ddd3927deed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
                         alt="">
                     <div class="card-title">
@@ -149,15 +149,15 @@
                                 alt="User">
                         </div>
                         <div class="card-info">
-                            <h2 class="trip-title">Pamora River</h2>
-                            <p class="trip-location">Boulder, CO</p>
+                            <h2 class="trip-title" data-number="5">Tall Mountain</h2>
+                            <p class="trip-location" data-number="5">Someplace, Somewhere</p>
                         </div>
                     </div>
                     <p class="trip-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
-                    <span class="card-link">SEE MORE</span>
+                    <span class="card-link" data-number="5">SEE MORE</span>
                 </div>
                 <div class="card" data-tab="personal">
-                    <img class="trip-image"
+                    <img class="trip-image" data-number="6"
                         src="https://images.unsplash.com/photo-1470104240373-bc1812eddc9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
                         alt="">
                     <div class="card-title">
@@ -166,12 +166,12 @@
                                 alt="User">
                         </div>
                         <div class="card-info">
-                            <h2 class="trip-title">Pamora River</h2>
-                            <p class="trip-location">Boulder, CO</p>
+                            <h2 class="trip-title" data-number="6">Matterhorn</h2>
+                            <p class="trip-location" data-number="6">KwaZulu-Natal, South Africa</p>
                         </div>
                     </div>
                     <p class="trip-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
-                    <span class="card-link">SEE MORE</span>
+                    <span class="card-link" data-number="6">SEE MORE</span>
                 </div>
             </div>
         </section>
@@ -194,5 +194,4 @@
     <script type="text/javascript" src="JS/trips.js"></script>
     <script type="text/javascript" src="JS/nav.js"></script>
   </body>
-
 </html>

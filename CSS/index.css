@@ -143,6 +143,14 @@ table {
   display: flex;
   flex-direction: row;
 }
+.icon-button-reverse {
+  margin: 0 auto 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.icon-button-reverse i {
+  margin-left: 10px;
+}
 *:focus {
   outline: none !important;
 }
@@ -251,6 +259,9 @@ header {
   font-weight: 400;
   color: #757575;
   margin: 15px 0 0 0;
+}
+button {
+  cursor: pointer;
 }
 .home-header {
   background-image: none;
@@ -731,15 +742,29 @@ footer p {
   padding-bottom: 0px !important;
   color: #757575;
 }
-.cta-add {
-  margin: 1rem auto;
+.cta-arrow {
+  margin: 0 auto 1rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
+}
+.cta-arrow i {
+  margin-left: 10px;
+}
+.cta-add {
+  margin: 0 auto 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.cta-add i {
+  margin-left: 10px;
 }
 .cta-edit {
-  margin: 1rem auto;
+  margin: 0 auto 1rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
+}
+.cta-edit i {
+  margin-left: 10px;
 }
 .trips {
   display: flex;
@@ -752,7 +777,7 @@ footer p {
 .trips .tab {
   margin: 1rem auto;
 }
-.trips .tab button {
+.trips .tab .trip-category {
   width: 200px;
   max-width: 225px;
   height: 50px;
@@ -762,6 +787,8 @@ footer p {
   text-align: center;
   background-color: white;
   border-style: none;
+}
+.trips .tab .trip-category-selected {
   border-bottom: 3px solid #4364f7;
 }
 .trips .tab button:hover {
@@ -836,6 +863,10 @@ footer p {
   font-weight: 400;
   color: #757575;
 }
+a {
+  margin: 0 auto;
+  padding-bottom: 0px;
+}
 .resume-container {
   background-color: white;
   border-radius: 4px;
@@ -875,10 +906,10 @@ footer p {
   font-weight: 400;
   color: #757575;
 }
-.resume-end .content-title {
+.i-resume-end .i-content-title {
   text-align: center;
 }
-.resume-end .content-text {
+.i-resume-end .i-content-text {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -971,7 +1002,7 @@ footer p {
 .trip-container .i-trips .i-tab {
   margin: 1rem auto;
 }
-.trip-container .i-trips .i-tab button {
+.trip-container .i-trips .i-tab .trip-category {
   width: 200px;
   max-width: 225px;
   height: 50px;
@@ -981,6 +1012,8 @@ footer p {
   text-align: center;
   background-color: white;
   border-style: none;
+}
+.trip-container .i-trips .i-tab .trip-category-selected {
   border-bottom: 3px solid #4364f7;
 }
 .trip-container .i-trips .i-trips-content {
