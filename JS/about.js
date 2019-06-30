@@ -4,7 +4,7 @@ class TabLink {
     this.data = this.e.dataset.tab;
     this.itemElement = document.querySelector(`.card[data-tab="${this.data}"]`);
     this.tabItem = new TabItem(this.itemElement);
-    this.e.addEventListener('click', (event) => {
+    this.e.addEventListener('click', () => {
       this.select();
     });
   };
