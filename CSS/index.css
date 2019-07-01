@@ -549,6 +549,11 @@ footer .footer-mid a {
   padding-left: 30px;
 }
 @media (max-width: 500px) {
+  footer .footer-mid a {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 500px) {
   footer .footer-mid span {
     display: none;
   }
