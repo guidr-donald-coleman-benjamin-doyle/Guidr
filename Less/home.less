@@ -5,7 +5,6 @@
     background-color: white;
     border-radius: 4px;
     max-width: 1200px;
-    width: 100%;
     margin: 50px auto;
     padding: 50px 35px;
     p {
@@ -44,6 +43,12 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        @media @tablet {
+            flex-direction: column;
+        }
+        @media @phone {
+            flex-direction: column;
+        }
         .intro-img {
             margin-right: 50px;
             width: 200px;
@@ -59,6 +64,14 @@
         .text-content {
             width: calc(100% - 250px);
             height: 105px;
+            @media @tablet {
+                width: 100%;
+                margin: 30px 0 0;
+            }
+            @media @phone {
+                width: 100%;
+                margin: 30px 0;
+            }
             .intro-info {
                 padding-bottom: 0px !important;
                 color: #757575;
@@ -83,6 +96,15 @@
     .border-bottom(0px);
     .tab {
         margin: 1rem auto;
+        @media @tablet {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        @media @phone {
+            width: 100%;
+            justify-content: center;
+        }
         .trip-category {
             width: 200px;
             max-width: 225px;
@@ -103,6 +125,12 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        @media @tablet {
+            margin-bottom: 50px;
+        }
+        @media @phone {
+            margin-bottom: 50px;
+        }
     }
 }
 .resume {
@@ -145,10 +173,22 @@
             display: flex;
             flex-wrap: wrap;
             margin-top: 30px;
+            @media @tablet {
+                margin: 30px auto 0;
+            }
+            @media @phone {
+                margin: 30px auto 0;
+            }
             .album-image {
                 height: auto;
                 object-fit: cover;
                 margin: 0 10px 10px 0;
+                @media @tablet {
+                    margin-bottom: 30px;
+                }
+                @media @phone {
+                    margin: 0 auto 30px;
+                }
             }
         }
     }

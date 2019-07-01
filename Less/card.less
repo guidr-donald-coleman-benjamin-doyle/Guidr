@@ -7,11 +7,15 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
-    &:hover{
+    &:hover {
         transform:scale(1.05);
     }
-
+    @media @phone {
+        margin: 50px auto 0;
+    }
+    @media @tablet {
+        margin: 50px auto 0;
+    }
     .trip-image {
         border-radius: 4px 4px 0 0;
         max-width:100%;
