@@ -1346,6 +1346,16 @@ a {
   flex-direction: column;
   flex-wrap: wrap;
 }
+@media (max-width: 1000px) {
+  .individual-trip-card .i-card {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .individual-trip-card .i-card {
+    width: 90%;
+  }
+}
 .individual-trip-card .i-card .i-trip-image {
   border-radius: 4px 4px 0 0;
   max-width: 100%;
