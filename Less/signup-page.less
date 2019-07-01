@@ -11,7 +11,7 @@
       height: 100%;
       position: relative;
 
-      @media (max-width: 500px) {
+      @media @phone {
         display: none;
       }
     }
@@ -33,12 +33,21 @@
   }
   .sign-up-container {
     width: 50%;
+
+    @media @phone {
+      width: 80%;
+      padding-top: 30px;
+      padding-left: 30px;
+    }
+
     .signup-form {
       width: 55%;
       position: relative;
-      @media (max-width: 500px) {
       
-      }
+      @media @phone {
+        width: 80%;
+
+        }
 
       h1 {
         text-align: center;

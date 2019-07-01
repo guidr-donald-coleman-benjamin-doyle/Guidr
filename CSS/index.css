@@ -347,9 +347,21 @@ nav .nav-right {
 .sign-up .sign-up-container {
   width: 50%;
 }
+@media (max-width: 500px) {
+  .sign-up .sign-up-container {
+    width: 80%;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+}
 .sign-up .sign-up-container .signup-form {
   width: 55%;
   position: relative;
+}
+@media (max-width: 500px) {
+  .sign-up .sign-up-container .signup-form {
+    width: 80%;
+  }
 }
 .sign-up .sign-up-container .signup-form h1 {
   text-align: center;
@@ -530,6 +542,11 @@ footer .footer-mid {
 footer .footer-mid a {
   padding-left: 30px;
 }
+@media (max-width: 500px) {
+  footer .footer-mid span {
+    display: none;
+  }
+}
 footer p {
   padding-left: 50px;
   padding-top: 20px;
@@ -652,7 +669,10 @@ footer p {
 @media (max-width: 500px) {
   .bottom .content-row img {
     max-width: 100%;
-    height: auto;
+    width: 80%;
+    height: 300px;
+    padding-bottom: 30px;
+    padding-left: 30px;
   }
 }
 .bottom .content-row h3 {
@@ -1120,6 +1140,14 @@ input[type=text]:hover,
 select:hover,
 textarea:hover {
   transform: scale(1.01);
+  border: 1px solid #6668d0;
+}
+@media (max-width: 500px) {
+  input[type=text],
+  select,
+  textarea {
+    width: 100%;
+  }
 }
 input[type=submit] {
   background-color: #5433ff;
@@ -1137,4 +1165,10 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  padding-left: 30%;
+}
+@media (max-width: 500px) {
+  .contact-container {
+    padding-left: 20px;
+  }
 }
