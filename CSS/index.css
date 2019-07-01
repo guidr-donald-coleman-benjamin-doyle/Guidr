@@ -988,12 +988,19 @@ a {
 }
 .i-resume-end .i-content-title {
   text-align: center;
+  font-size: 1.6rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.85);
+  margin: 30px 0 10px 0;
 }
-.i-resume-end .i-content-text {
+.i-resume-end .i-content-end {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding-top: 20px;
+  font-size: 1.6rem;
+  color: #757575;
 }
 .card {
   min-width: 275px;
