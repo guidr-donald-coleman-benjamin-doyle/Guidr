@@ -1331,6 +1331,13 @@ textarea:hover {
     width: 100%;
   }
 }
+@media (max-width: 800px) {
+  input[type=text],
+  select,
+  textarea {
+    width: 75%;
+  }
+}
 input[type=submit] {
   background-color: #5433ff;
   color: white;
@@ -1351,5 +1358,10 @@ input[type=submit]:hover {
 @media (max-width: 500px) {
   .contact-container {
     padding-left: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .contact-container {
+    padding-left: 20%;
   }
 }
