@@ -6,12 +6,16 @@
 
   .image-flow {
     width: 50%;
+    max-height: 100%;
+    overflow: hidden;
     img {
-      width: 100%;
-      height: 100%;
-      position: relative;
-
-      @media (max-width: 500px) {
+      max-width: auto;
+      height: auto;
+      object-fit: cover;
+      @media @tablet {
+        display: none;
+      }
+      @media @phone {
         display: none;
       }
     }
@@ -19,11 +23,15 @@
       position: absolute;
       width: 25%;
       margin: 0 auto;
-      @media (max-width: 500px) {
+      @media @tablet {
+        display: none;
+      }
+      @media @phone {
         display: none;
       }
       h1 {
         color: white;
+        font-size: 4rem;
       }
 
       p {
@@ -36,8 +44,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media @tablet {
+      width: 90%;
+      margin: 100px auto 0;
+    }
+    @media @phone {
+      width: 90%;
+      margin: 100px auto 0;
+    }
     .signup-form {
       width: 55%;
+      @media @tablet {
+        width: 80%;
+        max-width: 450px;
+        margin: 0 auto;
+      }
+      @media @phone {
+        width: 80%;
+        margin: 0 auto;
+      }
       h1 {
         text-align: center;
         font-weight: 300;

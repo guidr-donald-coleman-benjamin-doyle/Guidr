@@ -2,7 +2,6 @@
     background-color: white;
     border-radius: 4px;
     max-width: 1200px;
-    width: 100%;
     margin: 50px auto;
     padding: 25px 35px;
     p {
@@ -15,6 +14,15 @@
         width: 90%;
         .i-tab {
             margin: 1rem auto;
+            @media @tablet {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            @media @phone {
+                width: 100%;
+                justify-content: center;
+            }
             .trip-category {
                 width: 200px;
                 max-width: 225px;
@@ -35,6 +43,12 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
+            @media @tablet {
+                margin-bottom: 50px;
+            }
+            @media @phone {
+                margin-bottom: 50px;
+            }
         }
     }
 }

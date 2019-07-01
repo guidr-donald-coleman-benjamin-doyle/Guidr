@@ -162,6 +162,7 @@ html {
 }
 body {
   margin: 0;
+  height: 100vh;
 }
 .container-index {
   width: 100%;
@@ -283,6 +284,7 @@ button {
   flex-direction: row;
   justify-content: flex-end;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .home-header nav .text a {
   padding: 0;
@@ -310,6 +312,7 @@ nav .text {
   flex-direction: row;
   justify-content: flex-end;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 nav .text a {
   padding: 0;
@@ -329,11 +332,18 @@ nav .text a:hover {
 }
 .sign-up .image-flow {
   width: 50%;
+  max-height: 100%;
+  overflow: hidden;
 }
 .sign-up .image-flow img {
-  width: 100%;
-  height: 100%;
-  position: relative;
+  max-width: auto;
+  height: auto;
+  object-fit: cover;
+}
+@media (max-width: 1000px) {
+  .sign-up .image-flow img {
+    display: none;
+  }
 }
 @media (max-width: 500px) {
   .sign-up .image-flow img {
@@ -345,6 +355,11 @@ nav .text a:hover {
   width: 25%;
   margin: 0 auto;
 }
+@media (max-width: 1000px) {
+  .sign-up .image-flow .image-text-container {
+    display: none;
+  }
+}
 @media (max-width: 500px) {
   .sign-up .image-flow .image-text-container {
     display: none;
@@ -352,6 +367,7 @@ nav .text a:hover {
 }
 .sign-up .image-flow .image-text-container h1 {
   color: white;
+  font-size: 4rem;
 }
 .sign-up .image-flow .image-text-container p {
   color: white;
@@ -362,8 +378,33 @@ nav .text a:hover {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 1000px) {
+  .sign-up .sign-up-container {
+    width: 90%;
+    margin: 100px auto 0;
+  }
+}
+@media (max-width: 500px) {
+  .sign-up .sign-up-container {
+    width: 90%;
+    margin: 100px auto 0;
+  }
+}
 .sign-up .sign-up-container .signup-form {
   width: 55%;
+}
+@media (max-width: 1000px) {
+  .sign-up .sign-up-container .signup-form {
+    width: 80%;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .sign-up .sign-up-container .signup-form {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 .sign-up .sign-up-container .signup-form h1 {
   text-align: center;
@@ -565,33 +606,13 @@ footer p {
   width: 60%;
   padding: 75px 0 75px;
 }
-@media (max-width: 500px) {
-  .top-content .top-content-container {
-    padding-left: 100px;
-  }
-  .top-content .top-content-container hr {
-    width: 500px;
-  }
-}
 .top-content .top-content-container h1 {
   font-size: 40px;
   font-weight: 400;
   color: white;
 }
-@media (max-width: 500px) {
-  .top-content .top-content-container h1 {
-    font-size: 20px;
-  }
-}
 .top-content .top-content-container p {
-  width: 500px;
   color: white;
-}
-@media (max-width: 500px) {
-  .top-content .top-content-container p {
-    font-size: 15px;
-    width: 340px;
-  }
 }
 .top-content .top-content-container .btn-index {
   max-width: 250px;
@@ -665,11 +686,6 @@ footer p {
 .cta-container .middle-cta .cta-text .cta-text-container p {
   color: #546e7a;
 }
-@media (max-width: 500px) {
-  .cta-container .middle-cta .cta-text .cta-text-container {
-    padding-left: 100px;
-  }
-}
 .cta-container .bottom {
   display: flex;
   flex-direction: row;
@@ -718,7 +734,6 @@ footer p {
   font-size: 30px;
 }
 .cta-container .bottom .content-row .bottom-text .bottom-text-container p {
-  width: 400px;
   color: #546e7a;
 }
 .cta-container .bottom .content-row img {
@@ -758,7 +773,6 @@ footer p {
   background-color: white;
   border-radius: 4px;
   max-width: 1200px;
-  width: 100%;
   margin: 50px auto;
   padding: 50px 35px;
 }
@@ -800,6 +814,16 @@ footer p {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 1000px) {
+  .intro .flex-content {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .intro .flex-content {
+    flex-direction: column;
+  }
+}
 .intro .flex-content .intro-img {
   margin-right: 50px;
   width: 200px;
@@ -815,6 +839,18 @@ footer p {
 .intro .flex-content .text-content {
   width: calc(100% - 250px);
   height: 105px;
+}
+@media (max-width: 1000px) {
+  .intro .flex-content .text-content {
+    width: 100%;
+    margin: 30px 0 0;
+  }
+}
+@media (max-width: 500px) {
+  .intro .flex-content .text-content {
+    width: 100%;
+    margin: 30px 0;
+  }
 }
 .intro .flex-content .text-content .intro-info {
   padding-bottom: 0px !important;
@@ -855,6 +891,19 @@ footer p {
 .trips .tab {
   margin: 1rem auto;
 }
+@media (max-width: 1000px) {
+  .trips .tab {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .trips .tab {
+    width: 100%;
+    justify-content: center;
+  }
+}
 .trips .tab .trip-category {
   width: 200px;
   max-width: 225px;
@@ -874,6 +923,16 @@ footer p {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 1000px) {
+  .trips .trips-content {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .trips .trips-content {
+    margin-bottom: 50px;
+  }
 }
 .resume {
   display: flex;
@@ -921,10 +980,30 @@ footer p {
   flex-wrap: wrap;
   margin-top: 30px;
 }
+@media (max-width: 1000px) {
+  .photo-album .albums .album-content {
+    margin: 30px auto 0;
+  }
+}
+@media (max-width: 500px) {
+  .photo-album .albums .album-content {
+    margin: 30px auto 0;
+  }
+}
 .photo-album .albums .album-content .album-image {
   height: auto;
   object-fit: cover;
   margin: 0 10px 10px 0;
+}
+@media (max-width: 1000px) {
+  .photo-album .albums .album-content .album-image {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .photo-album .albums .album-content .album-image {
+    margin: 0 auto 30px;
+  }
 }
 .photo-album .no-albums {
   display: none;
@@ -946,7 +1025,6 @@ a {
   background-color: white;
   border-radius: 4px;
   max-width: 1200px;
-  width: 100%;
   margin: 50px auto;
   padding: 50px 35px 25px;
 }
@@ -999,6 +1077,19 @@ a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+.card:hover {
+  transform: 1.05;
+}
+@media (max-width: 500px) {
+  .card {
+    margin: 50px auto 0;
+  }
+}
+@media (max-width: 1000px) {
+  .card {
+    margin: 50px auto 0;
+  }
 }
 .card .trip-image {
   border-radius: 4px 4px 0 0;
@@ -1058,7 +1149,6 @@ a {
   background-color: white;
   border-radius: 4px;
   max-width: 1200px;
-  width: 100%;
   margin: 50px auto;
   padding: 25px 35px;
 }
@@ -1073,6 +1163,19 @@ a {
 }
 .trip-container .i-trips .i-tab {
   margin: 1rem auto;
+}
+@media (max-width: 1000px) {
+  .trip-container .i-trips .i-tab {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .trip-container .i-trips .i-tab {
+    width: 100%;
+    justify-content: center;
+  }
 }
 .trip-container .i-trips .i-tab .trip-category {
   width: 200px;
@@ -1093,6 +1196,16 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 1000px) {
+  .trip-container .i-trips .i-trips-content {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .trip-container .i-trips .i-trips-content {
+    margin-bottom: 50px;
+  }
 }
 .individual-trip-card {
   display: none;
