@@ -909,6 +909,16 @@ footer p {
   margin: 0 auto;
   width: 60%;
 }
+@media (max-width: 1000px) {
+  .intro {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .intro {
+    width: 100%;
+  }
+}
 .intro .description {
   margin-top: 35px;
   display: flex;
