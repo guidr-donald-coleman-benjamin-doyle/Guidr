@@ -493,6 +493,8 @@ html {
 .cards-container .card .img-container .card-img {
   height: auto;
   object-fit: cover;
+  overflow: hidden;
+  max-height: 400px;
 }
 .cards-container .card p {
   padding-top: 24px;
@@ -611,6 +613,10 @@ footer p {
   transition-duration: 280ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
+}
+.top-content .top-content-container .btn-index:hover {
+  transform: scale(1.05);
+  color: #00186f;
 }
 .cta-container .middle-cta {
   display: flex;
