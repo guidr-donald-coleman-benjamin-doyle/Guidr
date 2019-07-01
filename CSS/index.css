@@ -534,6 +534,8 @@ html {
 .cards-container .card .img-container .card-img {
   height: auto;
   object-fit: cover;
+  overflow: hidden;
+  max-height: 400px;
 }
 .cards-container .card p {
   padding-top: 24px;
@@ -587,6 +589,11 @@ footer .footer-mid {
 footer .footer-mid a {
   padding-left: 30px;
 }
+@media (max-width: 500px) {
+  footer .footer-mid span {
+    display: none;
+  }
+}
 footer p {
   padding-left: 50px;
   padding-top: 20px;
@@ -627,6 +634,10 @@ footer p {
   transition-duration: 280ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
+}
+.top-content .top-content-container .btn-index:hover {
+  transform: scale(1.05);
+  color: #00186f;
 }
 .cta-container .middle-cta {
   display: flex;
@@ -1061,12 +1072,19 @@ a {
 }
 .i-resume-end .i-content-title {
   text-align: center;
+  font-size: 1.6rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.85);
+  margin: 30px 0 10px 0;
 }
-.i-resume-end .i-content-text {
+.i-resume-end .i-content-end {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding-top: 20px;
+  font-size: 1.6rem;
+  color: #757575;
 }
 .card {
   min-width: 275px;
@@ -1079,7 +1097,7 @@ a {
   flex-wrap: wrap;
 }
 .card:hover {
-  transform: 1.05;
+  transform: scale(1.05);
 }
 @media (max-width: 500px) {
   .card {
@@ -1304,6 +1322,14 @@ input[type=text]:hover,
 select:hover,
 textarea:hover {
   transform: scale(1.01);
+  border: 1px solid #6668d0;
+}
+@media (max-width: 500px) {
+  input[type=text],
+  select,
+  textarea {
+    width: 100%;
+  }
 }
 input[type=submit] {
   background-color: #5433ff;
@@ -1320,4 +1346,10 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  padding-left: 30%;
+}
+@media (max-width: 500px) {
+  .contact-container {
+    padding-left: 20px;
+  }
 }
