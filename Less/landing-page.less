@@ -2,136 +2,167 @@
   background: linear-gradient(to right, #6fb1fc, #4364f7, #0052d4);
 }
 .top-content {
-  padding-left: 290px;
-  padding-bottom: 50px;
-  padding-top: 30px;
-
-  @media @phone {
-    padding-left: 100px;
-
-    hr {
-      width: 500px;
-    }
-  }
-
-  h1 {
-    font-size: 40px;
-    font-weight: 400;
-    color: white;
-
-    @media @phone {
-      font-size: 20px;
-    }
-  }
-
-  p {
-    width: 500px;
-    color: white;
-
-    @media @phone {
-      font-size: 15px;
-      width: 340px;
-    }
-  }
-
-  .btn {
-    .button(30%);
-
-    @media @phone {
-      .button(5px 10px);
-    }
-
-    a {
-      text-decoration: none;
-      color: @light-main;
-    }
-
-    &:hover {
-      background-color: @dark-main;
-    }
-  }
-}
-
-.middle-cta {
-  padding-top: 50px;
-
-  @media @phone {
-    vertical-align: middle;
-
-    hr {
-      width: 500px;
-    }
-  }
-
-  img {
-    width: 50%;
-    height: auto;
-    padding-left: 270px;
-    border-radius: 40%;
-
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .top-content-container {
+    width: 60%;
+    padding: 75px 0 75px;
     @media @phone {
       padding-left: 100px;
-    }
-  }
 
-  .cta-text {
-    width: 375px;
-    padding-left: 200px;
-
-    h3 {
-      font-weight: 300;
-      font-size: 30px;
+      hr {
+        width: 500px;
+      }
     }
 
-    p {
-      color: #546e7a;
-    }
-    @media @phone {
-      padding-left: 100px;
-    }
-  }
-}
-
-.bottom {
-  .content-row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 50px 0 50px 50px;
-
-    .bottom-text {
-      padding-left: 50px;
+    h1 {
+      font-size: 40px;
+      font-weight: 400;
+      color: white;
 
       @media @phone {
-        padding-left: 30px;
+        font-size: 20px;
       }
-    }
-
-    img {
-      max-width: 600px;
-      height: 500px;
-
-      @media (max-width: 500px) {
-        max-width: 100%;
-        height: auto;
-      }
-    }
-
-    h3 {
-      font-weight: 300;
-      font-size: 30px;
     }
 
     p {
-      width: 400px;
-      color: #546e7a;
+      width: 500px;
+      color: white;
+
+      @media @phone {
+        font-size: 15px;
+        width: 340px;
+      }
     }
 
-    .btn {
-      .button(30%);
-
-      &:hover {
-        background-color: @dark-main;
+    .btn-index {
+      max-width: 250px;
+      padding: 16px 32px 16px 32px;
+      color: #4364f7;
+      background-color: white;
+      font-size: 1.6rem;
+      border-radius: 100px;
+      box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0,0,0,.12);
+      transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: box-shadow;
+        transition-duration: 280ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0s;
+    }
+  }
+}  
+.cta-container {
+  .middle-cta {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    @media @phone {
+      flex-direction: column;
+    }
+    @media @tablet {
+      flex-direction: column;
+    }
+    img {
+      width: 50%;
+      height: auto;
+      @media @phone {
+        width: 100%;
       }
+      @media @tablet {
+        width: 100%;
+      }
+    }
+  
+    .cta-text {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media @phone {
+        width: 100%;
+        margin: 40px 0;
+      }
+      @media @tablet {
+        width: 100%;
+        margin: 40px 0;
+      }
+      .cta-text-container {
+        width: 60%;
+        h3 {
+          font-weight: 300;
+          font-size: 30px;
+        }
+        p {
+          color: #546e7a;
+        }
+        @media @phone {
+          padding-left: 100px;
+        }
+      }
+    }
+  }
+  
+  .bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .content-row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      @media @phone {
+        flex-direction: column;
+      }
+      @media @tablet {
+        flex-direction: column;
+      }
+      .bottom-text {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media @phone {
+          width: 100%;
+          margin: 40px 0;
+        }
+        @media @tablet {
+          width: 100%;
+          margin: 40px 0;
+        }
+        .bottom-text-container {
+          width: 60%;
+          h3 {
+            font-weight: 300;
+            font-size: 30px;
+          }
+          p {
+            width: 400px;
+            color: #546e7a;
+          }
+        }
+      }
+      img {
+        width: 50%;
+        height: auto;
+        @media @phone {
+          width: 100%;
+        }
+        @media @tablet {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .btn {
+    .button;
+    &:hover {
+      background-color: @dark-main;
     }
   }
 }
