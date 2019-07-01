@@ -433,6 +433,16 @@ a {
   max-height: 100%;
   overflow: hidden;
 }
+@media (max-width: 1000px) {
+  .sign-up .image-flow {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .sign-up .image-flow {
+    display: none;
+  }
+}
 .sign-up .image-flow img {
   max-width: auto;
   height: auto;
@@ -479,13 +489,13 @@ a {
 @media (max-width: 1000px) {
   .sign-up .sign-up-container {
     width: 90%;
-    margin: 100px auto 0;
+    margin: 36px auto 0;
   }
 }
 @media (max-width: 500px) {
   .sign-up .sign-up-container {
     width: 90%;
-    margin: 100px auto 0;
+    margin: 36px auto 0;
   }
 }
 .sign-up .sign-up-container .signup-form {
@@ -717,6 +727,16 @@ footer p {
   width: 60%;
   padding: 75px 0 75px;
 }
+@media (max-width: 500px) {
+  .top-content .top-content-container {
+    width: 90%;
+  }
+}
+@media (max-width: 1000px) {
+  .top-content .top-content-container {
+    width: 90%;
+  }
+}
 .top-content .top-content-container h1 {
   font-size: 40px;
   font-weight: 400;
@@ -890,6 +910,16 @@ footer p {
   max-width: 1200px;
   margin: 50px auto;
   padding: 50px 35px;
+}
+@media (max-width: 1000px) {
+  .home-container {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 500px) {
+  .home-container {
+    padding: 50px 0;
+  }
 }
 .home-container p {
   margin: 0 auto;
@@ -1153,6 +1183,16 @@ a {
   margin: 50px auto;
   padding: 50px 35px 25px;
 }
+@media (max-width: 1000px) {
+  .resume-container {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 500px) {
+  .resume-container {
+    padding: 50px 0;
+  }
+}
 .resume-container p {
   margin: 0 auto;
 }
@@ -1283,6 +1323,16 @@ a {
   max-width: 1200px;
   margin: 50px auto;
   padding: 25px 35px;
+}
+@media (max-width: 1000px) {
+  .trip-container {
+    padding: 25px 0;
+  }
+}
+@media (max-width: 500px) {
+  .trip-container {
+    padding: 25px 0;
+  }
 }
 .trip-container p {
   margin: 0 auto;
