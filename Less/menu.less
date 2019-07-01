@@ -1,48 +1,50 @@
-// @media @phone{
-//   .menu-button {
-//     position: absolute;
-//     right: 30px;
-//     top: 10px;
-//     cursor: pointer;
-//   }
-  
-//   .menu {
-//     display: none;
-//     position: fixed;
-//     top: 75px;
-//     right: 0;
-//     width: 350px;
-//     height: 100vh; /* This give the height 100% of the screen or, '100% of View Height' */
-//     background-color: #81c784;
-//     border: 1px solid #004d40;
-//     border-left: none;
-//     border-bottom: none;
-//     z-index: 2; /* This set the layer level of the element, it has precendence over initial level of 1*/
-//     animation-duration: 3s;
-//     animation-name: sildin;
-//   }
-  
-//   // @keyframes slidein {
-//   //   from {
-//   //     margin-left: 100%;
-//   //     width: 300%;
-//   //   }
-  
-//   //   to {
-//   //     margin-left: 0%;
-//   //     width: 100%;
-//   //   }
-//   // }
-  
-//   a {
-//     list-style-type: none;
-//     font-size: 32px;
-//     padding: 30px 0;
-//     text-align: center;
-//   }
-  
-//   .menu--open {
-//     display: block;
-//   }
-  
-// }
+.menu-bar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100vh; /* This give the height 100% of the screen or, '100% of View Height' */
+    background: linear-gradient(to right, #6fb1fc, #4364f7, #0052d4);
+    z-index: 2; /* This set the layer level of the element, it has precendence over initial level of 1*/
+    animation-duration: 3s;
+    animation-name: sildin;
+    .menu-icon {
+        color: white;
+        margin-top: 15px;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+    .menu-bar-option {
+        height: 100px;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        a {
+            color: white;
+        }   
+    }
+}
+a {
+    text-decoration: none;
+    margin: 0;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.menu--open {
+    display: block;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
